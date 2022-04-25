@@ -1,0 +1,23 @@
+.app{
+  height: 100vh;
+
+  .sections{
+    width: 100%;
+    height: calc(100vh - 70px) ;
+    background-color: blueviolet;
+    position: relative;
+    top: 70px;
+    scroll-behavior: smooth; // para o scrol voltar ao link clicado com suavidade
+    scroll-snap-type: y mandatory;//barra de rolagem apenas no corpo sem aparecer no header === esté é para o componente pai
+    scrollbar-width: none;//para sumir a barra de rolagem interna da pagina e ficar somente do browser === este para firefox e debaixo para demais navegadores
+    &::-webkit-scrollbar{
+      display: none;
+    }
+
+    > * { // config para os components filhos de sections
+      width: 100vw;
+      height: calc(100vh - 70px) ; // calculo para que sempre fique com 70px a menos que o tamanho total de visao da tela 
+      scroll-snap-align: start; // scroll ao realizar a tarefa de scroll ficar no centro do proximo component
+    }
+  }
+}
