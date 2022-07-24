@@ -3,7 +3,7 @@ import Header from "./components/header/Header";
 import Intro from "./components/intro/Intro";
 import Portifolio from "./components/portfolio/Portifolio";
 import Projects from "./components/projects/Projects";
-import './app.scss';
+import './app.css';
 import Menu from "./components/menu/Menu";
 
 function App() {

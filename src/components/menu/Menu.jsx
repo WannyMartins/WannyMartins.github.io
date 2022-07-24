@@ -1,24 +1,26 @@
 import React, { useContext } from 'react';
 import MyContext from '../../context/MyContext';
-import './menu.scss';
+import './menu.css';
 
 function Menu() {
 
-  const {openMenu, setOpenMenu} = useContext(MyContext);
+  const {active, setActive} = useContext(MyContext);
+
+  function onClick(){
+    setActive(true);
+  }
 
   return (
-    <div className={'menu ' + (openMenu && 'active')}>
+    <div className="menu">
+     
       <ul>
-        <li onClick={() => setOpenMenu(false)}>
+        <li onClick={(e) => e.target = onclick()}>
           <a href='#intro'>Home</a>
         </li>
-        <li  onClick={() => setOpenMenu(false)}> 
-          <a href='#portifolio'>Portfólio</a>
-        </li>
-        <li onClick={() => setOpenMenu(false)}> 
+        <li > 
           <a href='#projects'>Projetos</a>
         </li>
-        <li onClick={() => setOpenMenu(false)}> 
+        <li > 
           <a href='#contact'>Contatos</a>
         </li>
       </ul>

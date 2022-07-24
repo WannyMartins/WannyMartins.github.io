@@ -2,12 +2,11 @@ import React, { useState } from 'react'
 import MyContext from './MyContext'
 
 function Provider({children}) {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [active, setActive] = useState(false);
 
   
 const context ={
-  openMenu,
-  setOpenMenu,
+  active, setActive
 }
 
   return (

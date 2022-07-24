@@ -1,7 +1,7 @@
 import { init } from 'ityped';
 import React, { useEffect, useRef } from 'react';
 import { RiArrowDownSLine } from "react-icons/ri";
-import './intro.scss';
+// import './intro.scss';
 
 
 function Intro() {
