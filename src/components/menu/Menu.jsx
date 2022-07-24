@@ -1,20 +1,14 @@
-import React, { useContext } from 'react';
-import MyContext from '../../context/MyContext';
+import React from 'react';
 import './menu.css';
 
 function Menu() {
 
-  const {active, setActive} = useContext(MyContext);
-
-  function onClick(){
-    setActive(true);
-  }
 
   return (
     <div className="menu">
      
       <ul>
-        <li onClick={(e) => e.target = onclick()}>
+        <li >
           <a href='#intro'>Home</a>
         </li>
         <li > 
