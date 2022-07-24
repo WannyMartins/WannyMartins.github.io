@@ -4,3 +4,21 @@
   --cor-verde-claro-bg: #d7f7f8;
   --cor-verde-escuro-bg: #406b6d;
 }
+
+.app{
+  height:100vh;
+}
+.sections{
+  width: 100%;
+  position: relative;
+  scroll-behavior: smooth; 
+  /* // para o scrol voltar ao link clicado com suavidade */
+  scroll-snap-type: y mandatory;
+  /* //barra de rolagem apenas no corpo sem aparecer no header === esté é para o componente pai */
+  scrollbar-width: none;
+}
+  /* //para sumir a barra de rolagem interna da pagina e ficar somente do browser === este para firefox e debaixo para demais navegadores */
+  
+  /* .app ::-webkit-scrollbar{
+    display: none;
+  } */

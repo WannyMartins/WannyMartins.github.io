@@ -11,9 +11,9 @@ function Header() {
     <div className="header"> 
         {/* <div className={'header ' + (openMenu && 'active')}>  */}
 
-      <div className="wrapper">
+
         <div className="dados">
-          <a href='#intro'>
+          <a href='#intro' className='logoContainer'>
             <img src="imagens/logo-sbg-green.png" 
             alt="logo" className='logo'/>
           </a>
@@ -25,7 +25,6 @@ function Header() {
             <MdEmail className='icon'/>
             <span>wcatery@gmail.com</span>
           </div>
-        </div>
 
 
       </div>

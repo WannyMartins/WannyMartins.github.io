@@ -13,9 +13,14 @@
   align-items: center;
 
 }
+
+.logoContainer{
+  padding: 0;
+  height: 90px;
+}
 .logo{
   width: 8rem;
-  text-decoration: none;
+padding-left: 0;
 }
 
 .itemContainer{

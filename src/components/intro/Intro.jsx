@@ -1,7 +1,7 @@
 import { init } from 'ityped';
 import React, { useEffect, useRef } from 'react';
 import { RiArrowDownSLine } from "react-icons/ri";
-// import './intro.scss';
+import './intro.css';
 
 
 function Intro() {
@@ -20,16 +20,16 @@ function Intro() {
     <div className='intro' id='intro'>
       <div className="left">
         <div className="imgContainer">
-          <img src="imagens/foto1.png" alt="" />
+          <img className="foto" src="imagens/foto1.png" alt="" />
         </div>
       </div>
-      <div className="right">
-        <div className="wrapper">
-          <h2>Olá! Eu sou</h2>
-          <h1>Wanny Martins</h1>
-          <h3>Desenvolvedora <span ref={myText}></span></h3>
+      <div className="dados-intro">
+        <div className="info">
+          <h2 className="ola" >Olá! Eu sou</h2>
+          <h1 className="nome">Wanny Martins</h1>
+          <h3 className="stacks">Desenvolvedora <span className="ityped-span" ref={myText}></span></h3>
         </div>
-        <a href="#portfolio">
+        <a href="#projects" className='link-arrow'>
           <RiArrowDownSLine className='arrow'/>
         </a>
       </div>
